@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusão Digital</title>
+    <meta name="description" content="Neste site abordaremos asuntos da importância e de como é feito a inclusão digital para pessoas com deficiencia ou sem acesso a informatica básica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Página de Contato</title>
+        <script>
+        document.addEventListener( 'submit', function( event ) {
+            event.preventDefault();
+            alert( 'Mensagem enviada com sucesso!' );
+            document.getElementById('formulario').reset();
+            location.reload();
+        }, false );
+        </script>
+        
+        
+</head>
+<body>
+    
+    <button class="btn-read" onclick="textToAudio()">Ler Texto</button>
+       
+        <h1 class="center">Inclusão digital no Brasil e no mundo são importantes:</h1>
+        
+        <ul style="text-align: left;">
+            <li>Pensando nisso montamos está página para você entrar em contato conosco. Deixe seu FeedBack, critica sujestão ou até assuntos que poderão ser abordados futuramente:</li>
+        </ul>
+            
+            <h1 class="center">Entre em Contato</h1>
+           
+            <form id="formulario" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <br>
+            <br>
+        
+        <img src="imagem\contato.jpeg" alt="a imagem mostra varias pessoas conectadas a internet" style="width:40%;" class="responsive">
+ 
+        <br>
+        <br>
+        <br>
+
+        <button class="btn-home" role="button" aria-label="Voltar para a página inicial" onclick="window.location.href='index.html'">Clique aqui para voltar a página inicial</button>
+    
+    <script>
+
+      function textToAudio() {
+          let msg = document.body.innerText;
+          let speech = new SpeechSynthesisUtterance();
+          speech.lang = "pt-BR";
+          speech.text = msg;
+          speech.volume = 1;
+          speech.rate = 1;
+          speech.pitch = 1;
+          window.speechSynthesis.speak(speech);
+      }
+  </script>
+
+</body>
+</html>

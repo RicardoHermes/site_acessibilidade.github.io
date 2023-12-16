@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Inclusão Digital</title>
+  <meta name="description" content="Neste site abordaremos asuntos da importância e de como é feito a inclusão digital para pessoas com deficiencia ou sem acesso a informatica básica">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+
+<body>
+    <button class="btn-read" onclick="textToAudio()">Ler Texto</button>
+    <selection>
+    <h1 class="center"> O que é a inclusão digital?</h1>
+    <p>A inclusão digital é o processo de democratização do acesso às tecnologias da informação, permitindo a inserção de todos na sociedade da informação. Inclusão digital é mais que simplesmente ter acesso a internet, trata-se de saber como usar as tecnologias digitais para melhorar a vida das pessoas e da sociedade como um todo.</p>
+    </selection>
+        <img src="imagem\digital_para_sociedade.jpeg" alt="a imagem mostra uma sociedade conectada pela internet" style="width:40%;" class="responsive">
+   
+
+    <br>
+   
+    <div>
+     <selection>
+      <h1 class="center">Assista o video, você vai encontrar uma hitória de superação e Motivação !</h1></selection> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QUfE2LcXCI8?si=L3EVVKTZMnmoZKnx" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    </div>
+         
+
+    <seletion>
+      <h1 class="center">Por que a inclusão digital é importante para a sociedade?</h1>
+      <p>A inclusão digital é importante para a sociedade porque permite que todos tenham acesso à informação e ao conhecimento. Ela promove a igualdade de oportunidades, permitindo que todos possam participar da sociedade da informação. Além disso, a inclusão digital também pode ajudar a reduzir a desigualdade social, pois oferece oportunidades de educação e emprego para todos.</p>
+    </seletion>
+
+    <div class="container">
+        <img src="imagem\gerando_lucro_para_sociedade2.jpeg" alt="a imagem mostra uma pessoa com deficiencia contribuindo para sociedade através da internet" style="width:40%;"class="responsive">
+    </div>
+    
+    <seletion>
+    <h1 class="center">Por que a inclusão digital é importante para a economia?</h1>
+    <p>A inclusão digital é importante para a economia porque promove o desenvolvimento econômico. Com o acesso à tecnologia, as pessoas podem adquirir novas habilidades e conhecimentos, o que pode levar a melhores oportunidades de emprego. Além disso, a inclusão digital também pode promover o empreendedorismo, pois permite que as pessoas comecem seus próprios negócios online.</p>
+    </seletion>
+
+    <div class="container">
+      <img src="imagem\gerando_lucro_para_sociedade1.jpeg" alt="no mundo financeiro tambem podemos incluir pessoas com deficiencia" style="width:40%;"class="responsive">
+  </div>
+
+  <button class="btn-home" role="button" aria-label="Voltar para a página inicial" onclick="window.location.href='index.html'">Clique aqui para voltar a página inicial</button>
+
+    <script>
+      function textToAudio() {
+          let msg = document.body.innerText;
+          let speech = new SpeechSynthesisUtterance();
+          speech.lang = "pt-BR";
+          speech.text = msg;
+          speech.volume = 1;
+          speech.rate = 1;
+          speech.pitch = 1;
+          window.speechSynthesis.speak(speech);
+      }
+  </script>
+</body>
+
+</html>

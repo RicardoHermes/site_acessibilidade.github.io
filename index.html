@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusão Digital</title>
+    <meta name="description" content="Neste site abordaremos asuntos da importância e de como é feito a inclusão digital para pessoas com deficiencia ou sem acesso a informatica básica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+      
+</head>
+
+<body>
+        <button class="btn-read" onclick="textToAudio()">Ler Texto</button>
+        
+        <h1 class="center">A inclusão digital é um direito de todos e um dever de todos.</h1>
+        
+        <div>
+            <img src="imagem/inclusao_digital_todos2.jpeg" alt="Imagem mostrando várias pessoas com deficiencia ou não interligadas pela internet" class="responsive">
+        </div>
+        
+            <p>No entanto, sabemos que nem todos têm acesso às tecnologias digitais, seja por falta de infraestrutura, de recursos financeiros, de habilidades ou de conhecimento. Essa situação gera uma exclusão digital, que afeta principalmente as pessoas com deficiência e as pessoas de baixa renda, que já enfrentam outras formas de discriminação e desigualdade social.</p>
+            <h3>A exclusão digital impede que essas pessoas possam usufruir dos benefícios do mundo digital, como:</h3>
+            <ul style="text-align: left;">
+                <li >Acessar informações e serviços públicos e privados, como saúde, educação, cultura, transporte, segurança, entretenimento, etc.</li>
+                <li>Comunicar-se com familiares, amigos, colegas e outras pessoas, por meio de redes sociais, aplicativos, e-mails, etc.</li>
+                <li>Aprender novas habilidades e conhecimentos, por meio de cursos, tutoriais, vídeos, podcasts, etc.</li>
+                <li>Trabalhar e gerar renda, por meio de plataformas, aplicativos, sites, etc.</li>
+                <li>Expressar suas opiniões, ideias, sentimentos e criatividade, por meio de blogs, vlogs, podcasts, etc.</li>
+                <li>Participar da vida política e social, por meio de votações, consultas, petições, manifestações, etc.</li>
+            </ul>
+      
+         
+            <p>Por isso, é fundamental promover a inclusão digital para pessoas com deficiência e baixa renda, para que elas possam ter mais autonomia, dignidade, qualidade de vida e desenvolvimento humano.</p>
+            <p>Esse é o objetivo do nosso site: mostrar a importância da inclusão digital para esses grupos, compartilhar experiências, dicas, recursos e iniciativas que possam facilitar e ampliar o acesso às tecnologias digitais, e estimular a participação e a colaboração de todos nessa causa.</p>
+            <p>Queremos que o nosso site seja um espaço de informação, conscientização, inspiração e mobilização, para que juntos possamos construir uma sociedade mais justa, inclusiva e digital para todos.</p>
+            
+            <div>
+                <img src="imagem\inclusao_digital_todos.jpeg" alt="Imagem com pessoas de todas as etnias do mundo e deficiência conectadas a um dispositivo com acesso à internet " class="responsive">
+            </div>
+            
+            <h2>Se você se identifica com essa proposta, Seja Bem-Vindo ao nosso site! Aqui você vai encontrar conteúdos sobre:</h2>
+            <ul style="text-align: left;">
+                <li>O que é a inclusão digital e por que ela é importante para a sociedade e para a economia.</li>
+                <li>Qual é o cenário da inclusão digital no Brasil e no mundo, quais são os desafios e as oportunidades que ela apresenta.</li>
+                <li>Quais são as iniciativas e os projetos que promovem a inclusão digital, tanto do governo quanto da iniciativa privada e da sociedade civil.</li>
+                <li>Quais são os benefícios e os impactos da inclusão digital para as pessoas, especialmente para as mais vulneráveis e excluídas socialmente.</li>
+                <li>Como você pode participar e colaborar com a inclusão digital, seja como usuário, como produtor ou como difusor de conteúdo digital.</li>
+            </ul>
+            <p style="text-align: left;">Esperamos que você goste do nosso site e que ele seja útil para você. Se você tiver alguma dúvida, sugestão ou comentário, entre em contato conosco. Estamos à disposição para ouvir você e melhorar o nosso trabalho.</p>
+     
+        <nav>
+            <button class="btn-read"><a href="pagina1.html">O que é inclusão digital?</a></button>
+            <button class="btn-read"><a href="pagina2.html">Inclusão digital no Brasil e no mundo</a></button>
+            <button class="btn-read"><a href="pagina3.html">Contato | Fale conosco</a></button>
+          </nav>
+   
+        <script>
+            function textToAudio() {
+                let msg = document.body.innerText;
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "pt-BR";
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                window.speechSynthesis.speak(speech);
+            }
+        </script>
+    
+</body>
+</html>
